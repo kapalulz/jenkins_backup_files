@@ -5,8 +5,8 @@ Transfer to GitHub repo </br>
 Plugins: </br>
 • [ThinBackup](https://plugins.jenkins.io/thinBackup/) </br>
 • [HTTP Request](https://www.jenkins.io/doc/pipeline/steps/http_request/) </br>
-</br>  
-Terraform: </br>
+*credentials.xml* will be stored in AWS S3 after deployment </br>  </br>  
+**Terraform:** </br>
 Create a new ec2 instance with jenkins </br>
 Bash script: </br>
 Install </br>
