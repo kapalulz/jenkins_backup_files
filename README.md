@@ -2,10 +2,11 @@
 Backup all critical files  -> </br>
 Archive files (zip), if needed -> </br>
 Transfer to GitHub repo </br>
+*credentials.xml* will be stored in AWS S3 after deployment </br>
 Plugins: </br>
 • [ThinBackup](https://plugins.jenkins.io/thinBackup/) </br>
 • [HTTP Request](https://www.jenkins.io/doc/pipeline/steps/http_request/) </br>
-*credentials.xml* will be stored in AWS S3 after deployment </br>  </br>  
+  </br>  
 **Terraform:** </br>
 Create a new ec2 instance with jenkins </br>
 Bash script: </br>
