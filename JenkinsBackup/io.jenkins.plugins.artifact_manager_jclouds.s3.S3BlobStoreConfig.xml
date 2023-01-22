@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<io.jenkins.plugins.artifact__manager__jclouds.s3.S3BlobStoreConfig plugin="artifact-manager-s3@670.v0558a_cb_c82c2">
+  <container>my-artifact-bucket-kapalulz</container>
+  <prefix>/909/</prefix>
+  <usePathStyleUrl>false</usePathStyleUrl>
+  <useHttp>false</useHttp>
+  <useTransferAcceleration>false</useTransferAcceleration>
+  <disableSessionToken>false</disableSessionToken>
+  <customEndpoint></customEndpoint>
+  <customSigningRegion></customSigningRegion>
+  <deleteArtifacts>false</deleteArtifacts>
+  <deleteStashes>false</deleteStashes>
+</io.jenkins.plugins.artifact__manager__jclouds.s3.S3BlobStoreConfig>
