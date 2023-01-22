@@ -1,0 +1,50 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.14.3">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>git@github.com:kapalulz/test.git</url>
+        <credentialsId>JenkinsGitPush</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/main</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="empty-list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>git config --global user.email &quot;kapalkoko@gmail.com&quot;
+git config --global user.name &quot;Oleksandr Kashuba&quot;
+
+cp -r /home/kapalulz/jenkinsBackUp1/FULL-* /var/lib/jenkins/workspace/testik/
+
+
+git add .
+git commit -am &quot;test&quot;</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <io.jenkins.plugins.git__push.GitPush plugin="git-push@34.vd474e0fe7b_ec">
+      <targetBranch>main</targetBranch>
+      <targetRepo>origin</targetRepo>
+    </io.jenkins.plugins.git__push.GitPush>
+  </publishers>
+  <buildWrappers/>
+</project>
